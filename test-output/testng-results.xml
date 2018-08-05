@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="970" started-at="2018-08-05T07:33:59Z" finished-at="2018-08-05T07:33:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="970" started-at="2018-08-05T07:33:59Z" finished-at="2018-08-05T07:33:59Z">
+      <class name="com.anoop.selenium.ExcelTest">
+        <test-method status="PASS" signature="testExcelReadOperation()[pri:0, instance:com.anoop.selenium.ExcelTest@5b275dab]" name="testExcelReadOperation" duration-ms="907" started-at="2018-08-05T07:33:59Z" finished-at="2018-08-05T07:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExcelReadOperation -->
+        <test-method status="PASS" signature="testExcelWriteOperation()[pri:1, instance:com.anoop.selenium.ExcelTest@5b275dab]" name="testExcelWriteOperation" duration-ms="0" started-at="2018-08-05T07:33:59Z" finished-at="2018-08-05T07:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExcelWriteOperation -->
+      </class> <!-- com.anoop.selenium.ExcelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
