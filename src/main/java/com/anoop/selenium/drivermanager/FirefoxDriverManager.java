@@ -10,4 +10,10 @@ public class FirefoxDriverManager extends DriverManager{
 		
 	}
 
+	@Override
+	protected void stopServer() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

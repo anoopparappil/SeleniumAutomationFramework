@@ -1,6 +1,5 @@
 package com.anoop.selenium;
 
-import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -22,7 +21,7 @@ public class BrowserTest {
 	}
 	
 	@BeforeMethod
-	public void init()  throws MalformedURLException{
+	public void init()  throws Exception{
 		driver = driverManager.getDriver();
 	}
 	
