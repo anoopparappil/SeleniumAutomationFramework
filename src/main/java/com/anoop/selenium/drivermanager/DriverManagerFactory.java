@@ -1,10 +1,13 @@
 package com.anoop.selenium.drivermanager;
 
+import com.anoop.selenium.utils.PropertyHandler;
 
 public class DriverManagerFactory {
 	
-	public static DriverManager getManager(DriverType driverType) {
+	public static DriverManager getManager() {
 		DriverManager driverManager;
+		String browser = PropertyHandler.getProperty("browser");
+		DriverType driverType = DriverType.valueOf(browser.toUpperCase());
 		
 		switch(driverType) {
 		case CHROME:

@@ -1,11 +1,13 @@
 package com.anoop.selenium.drivermanager;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 
 public abstract class DriverManager {
 
 	protected WebDriver driver;
-	protected abstract void createDriver();
+	protected abstract void createDriver()  throws MalformedURLException;
 	
 	public void quitDriver() {
 		if(driver != null) {
@@ -14,7 +16,7 @@ public abstract class DriverManager {
 		}
 	}
 	
-	public WebDriver getDriver() {
+	public WebDriver getDriver()  throws MalformedURLException{
 		if(driver == null) {
 			createDriver();
 		}

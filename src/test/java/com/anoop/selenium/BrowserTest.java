@@ -1,5 +1,7 @@
 package com.anoop.selenium;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -9,7 +11,6 @@ import org.testng.annotations.Test;
 
 import com.anoop.selenium.drivermanager.DriverManager;
 import com.anoop.selenium.drivermanager.DriverManagerFactory;
-import com.anoop.selenium.drivermanager.DriverType;
 
 public class BrowserTest {
 	DriverManager driverManager;
@@ -17,11 +18,11 @@ public class BrowserTest {
 	
 	@BeforeTest
 	public void config() {
-		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
+		driverManager = DriverManagerFactory.getManager();
 	}
 	
 	@BeforeMethod
-	public void init() {
+	public void init()  throws MalformedURLException{
 		driver = driverManager.getDriver();
 	}
 	
